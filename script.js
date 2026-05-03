@@ -9,6 +9,7 @@ const projects = [
     meta: ['Live dashboard', 'Business-facing overview'],
     liveUrl:
       'https://public.tableau.com/app/profile/abhijeet.kumar5810/viz/HotelBookingDemand_17772927069120/DASHBOARD1EXECUTIVEOVERVIEW',
+    repoUrl: 'https://github.com/Genrator79/E_G6_HotelBookingDemandAnalysis.git',
     previewImage: 'assets/Hotels_analysis.png',
   },
   {
@@ -24,6 +25,20 @@ const projects = [
     previewImage: 'assets/Loan default.png',
   },
 ];
+
+// ARIS project: ML data cleaning and analysis (Python)
+projects.push({
+  name: 'ARIS',
+  badge: 'ML / Data cleaning',
+  description:
+    'An ML project focused on data cleaning, exploratory analysis, and preparatory pipelines for modelling. Implemented primarily in Python with notebook-friendly workflows.',
+  tags: ['Python', 'Pandas', 'Machine Learning'],
+  categories: ['Python'],
+  meta: ['Data cleaning', 'Exploratory analysis'],
+  liveUrl: 'https://arischurnai.streamlit.app/',
+  repoUrl: 'https://github.com/AgrimaOjha/ARIS',
+  previewImage: 'assets/ml.png',
+});
 
 const filters = ['All', ...new Set(projects.flatMap((project) => project.categories))];
 
@@ -106,7 +121,8 @@ function renderProjects() {
             </div>
 
             <div class="project-footer">
-              <a class="ghost-button" href="${project.liveUrl}" aria-label="Open ${project.name}">Live website</a>
+              <a class="ghost-button" href="${project.liveUrl}" target="_blank" rel="noreferrer" aria-label="Open ${project.name} live">Live website</a>
+              ${project.repoUrl ? `<a class="ghost-button" href="${project.repoUrl}" target="_blank" rel="noreferrer" aria-label="Open ${project.name} repo">GitHub</a>` : ''}
             </div>
           </div>
         </article>
