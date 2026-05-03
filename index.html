@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Raghav Kaushal's data-centric portfolio built with a professional beige theme."
+    />
+    <title>Raghav Kaushal | Data Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero" aria-label="Raghav Kaushal home">
+          <span class="brand-mark">RK</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#approach">Approach</a>
+        </nav>
+      </header>
+
+      <main class="layout">
+        <aside class="profile-panel" id="hero">
+          <div class="profile-card">
+            <div class="avatar-ring" aria-hidden="true">
+              <img class="avatar-photo" src="assets/RK.jpg" alt="Raghav Kaushal" />
+            </div>
+
+            <div class="profile-copy">
+              <p class="eyebrow">Data Strategy Portfolio</p>
+              <h1>Raghav Kaushal</h1>
+              <p class="lead">
+                I build practical analytics systems, operational dashboards, and decision tools that
+                turn scattered data into clear business action.
+              </p>
+            </div>
+
+            <div class="live-links">
+              <p class="section-label">Live projects</p>
+              <a
+                href="https://public.tableau.com/app/profile/abhijeet.kumar5810/viz/HotelBookingDemand_17772927069120/DASHBOARD1EXECUTIVEOVERVIEW"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Hotels Analysis"
+              >
+                Hotels Analysis
+              </a>
+              <a
+                href="https://docs.google.com/spreadsheets/d/1I08bak5GjFaTOK7W37pT1e3F5wkO3QVP4P1H2OkyTT8/edit?gid=1829128131#gid=1829128131"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Loan Default"
+              >
+                Loan Default
+              </a>
+            </div>
+
+            <div class="contact-links">
+              <p class="section-label">Contact me</p>
+              <a
+                href="https://github.com/GabbyMymus"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open GitHub profile"
+              >
+                github.com/GabbyMymus
+              </a>
+              <a href="mailto:kaushalraghav921@gmail.com" aria-label="Send email">
+                kaushalraghav921@gmail.com
+              </a>
+            </div>
+
+            <div class="focus-grid" aria-label="Core strengths">
+              <div>
+                <span>Analytics</span>
+                <strong>Forecasting, KPI design, reporting</strong>
+              </div>
+              <div>
+                <span>Automation</span>
+                <strong>Repeatable workflows and data prep</strong>
+              </div>
+              <div>
+                <span>Visualization</span>
+                <strong>Executive dashboards and story-led charts</strong>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <section class="portfolio-panel">
+          <div class="hero-banner">
+            <div>
+              <p class="eyebrow">Portfolio / repositories</p>
+              <h2>Data centric work portfolio, built to be analysed</h2>
+            </div>
+
+            <div class="hero-summary">
+              <p>
+                Designed for a polished first impression: business-focused, insight-forward, and
+                paired with live project previews.
+              </p>
+            </div>
+          </div>
+
+          <div class="controls">
+            <label class="search-box" for="projectSearch">
+              <span>Find a project</span>
+              <input id="projectSearch" type="search" placeholder="Search by name, tool, or tag" />
+            </label>
+
+            <div class="chip-group" id="filters" aria-label="Project filters"></div>
+          </div>
+
+          <section class="projects" id="projects" aria-live="polite"></section>
+
+          <section class="approach-card" id="approach">
+            <div>
+              <p class="section-label">Working style</p>
+              <h3>Built to explain the business, not just display the data.</h3>
+            </div>
+
+            <div class="approach-copy">
+              <p>
+                Each project is framed around a measurable question, a clean visual hierarchy, and a
+                concise outcome so the portfolio reads like a decision system rather than a gallery.
+              </p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
